@@ -615,7 +615,7 @@ $\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_linkedin}\end{arra
 
 \newcommand{\ecveducation}[6][30pt]{%
  \ecvitem[#1]{#2}{\begin{Large}\textcolor{torea-bay}{#3}\end{Large}
- \hfill\small\textcolor{curious-blue}{#6}\par\vspace{3pt}
+ \hfill\begin{small}\textcolor{curious-blue}{#6}\par\vspace{3pt}\end{small}
  #4{\par\vspace{3pt}}
  #5}
 }
