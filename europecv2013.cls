@@ -605,11 +605,12 @@ $\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_linkedin}\end{arra
  \ecvitem{#1}{\Large \textcolor{torea-bay}{#2}}
 }
 
-\newcommand{\ecvworkexperience}[6][20pt]{%
+\newcommand{\ecvworkexperience}[7][20pt]{%
  \ecvitem[#1]{#2}{\begin{Large}\textcolor{torea-bay}{#3}\end{Large}\par\vspace{3pt}
  #4{\par}
  #5{\par\vspace{3pt}}
- #6}
+ #6{\par}
+ \textcolor{curious-blue}{\ecv@sectorkey} #7}
 }
 
 \newcommand{\ecveducation}[6][30pt]{%
