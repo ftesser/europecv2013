@@ -32,6 +32,7 @@
 \def\ecv@cefbasickey{\ecv@utf{Livello base}}
 \def\ecv@cefindepkey{\ecv@utf{Livello intermedio}}
 \def\ecv@cefprofkey{\ecv@utf{Livello avanzato}}
+\def\ecv@sectorkey{\ecv@utf{Attività o settore}}
 
 \renewcommand*{\ecvtitle}{\ecv@utf{%
 \Large\textbf{C\ecv@kern u\ecv@kern r\ecv@kern r\ecv@kern
