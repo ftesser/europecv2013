@@ -31,7 +31,7 @@
 % CV models and instructions:
 %   http://europass.cedefop.europa.eu/en/documents/curriculum-vitae/templates-instructions
 
-\DeclareRobustCommand\ecv@utf[1]{{\inputencoding{utf8x}#1}}
+\DeclareRobustCommand\ecv@utf[1]{{\inputencoding{utf8}#1}}
 
 % Set language
 \DeclareOption{english}{%
@@ -226,7 +226,6 @@
 \DeclareOption{cp1257}{\AtEndOfClass{\inputencoding{cp1257}}}
 \DeclareOption{ansinew}{\AtEndOfClass{\inputencoding{ansinew}}}
 \DeclareOption{utf8}{\AtEndOfClass{\inputencoding{utf8}}}
-\DeclareOption{utf8x}{\AtEndOfClass{\inputencoding{utf8x}}}
 \DeclareOption{koi8-r}{\AtEndOfClass{\inputencoding{koi8-r}}}
 \DeclareOption{koi8-ru}{\AtEndOfClass{\inputencoding{koi8-ru}}}
 \DeclareOption{koi8-u}{\AtEndOfClass{\inputencoding{koi8-u}}}
@@ -284,8 +283,7 @@
 \ProcessOptions\relax
 
 \LoadClass[\ecv@fontsize]{extarticle}
-\RequirePackage{ucs}
-\RequirePackage[utf8x]{inputenc}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage{array}
 \RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \RequirePackage{longtable}
