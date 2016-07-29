@@ -40,8 +40,7 @@
 \DeclareOption{cp1252}{\AtEndOfClass{\inputencoding{cp1252}}}
 \DeclareOption{cp1257}{\AtEndOfClass{\inputencoding{cp1257}}}
 \DeclareOption{ansinew}{\AtEndOfClass{\inputencoding{ansinew}}}
-\DeclareOption{utf8}{\AtEndOfClass{\inputencoding{utf8x}}}
-\DeclareOption{utf8x}{\AtEndOfClass{\inputencoding{utf8x}}}
+\DeclareOption{utf8}{\AtEndOfClass{\inputencoding{utf8}}}
 \DeclareOption{koi8-r}{\AtEndOfClass{\inputencoding{koi8-r}}}
 \DeclareOption{koi8-ru}{\AtEndOfClass{\inputencoding{koi8-ru}}}
 \DeclareOption{koi8-u}{\AtEndOfClass{\inputencoding{koi8-u}}}
@@ -79,8 +78,7 @@
 \ProcessOptions\relax
 
 \LoadClass[\ecl@fontsize]{extarticle}
-\RequirePackage{ucs}
-\RequirePackage[utf8x]{inputenc}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \RequirePackage[overload]{textcase}
 \RequirePackage[bookmarks=false,colorlinks=true,urlcolor=navyblue]{hyperref}
