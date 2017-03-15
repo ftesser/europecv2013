@@ -352,6 +352,7 @@
 \newcommand*{\ecvemail}[2][]{\def\ecv@emailid{#2}\def\ecv@emailtext{#1}}
 \newcommand*{\ecvlinkedin}[1]{\def\ecv@linkedin{#1}}
 \newcommand*{\ecvhomepage}[1]{\def\ecv@homepage{#1}}
+\newcommand*{\ecvgooglescholar}[1]{\def\ecv@googlescholar{#1}}
 \newcommand*{\ecvnationality}[1]{\def\ecv@nationality{#1}}
 \newcommand*{\ecvdateofbirth}[1]{\def\ecv@birth{#1}}
 \newcommand*{\ecvgender}[1]{\def\ecv@gender{#1}}
@@ -380,6 +381,7 @@
 \ecvemail{}
 \ecvlinkedin{}
 \ecvhomepage{}
+\ecvgooglescholar{}
 \ecvgender{}
 \ecvdateofbirth{}
 \ecvnationality{}
@@ -412,7 +414,10 @@ $\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_mobile}\end{array}
 $\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_url}\end{array}$\ecv@homepage\par\vspace{5pt}
 \fi
 \ifx\@empty\ecv@linkedin\else
-$\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_linkedin}\end{array}$\ecv@linkedin\par\vspace{10pt}
+$\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_linkedin}\end{array}$\ecv@linkedin\par\vspace{5pt}
+\fi
+\ifx\@empty\ecv@googlescholar\else
+$\begin{array}{@{}l}\includegraphics[width=\ecv@iconwidth]{ic_url}\end{array}$\ecv@googlescholar\par\vspace{5pt}
 \fi
 \ifx\@empty\ecv@gender
 	\ifx\@empty\ecv@birth
